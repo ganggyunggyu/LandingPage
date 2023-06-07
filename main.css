@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+
+h2, h3, p, div, h4, h5, span{
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+}
+
+body, h4, h3, h2,h5,p{
+    margin: 0;
+    padding: 0;
+}
+.btn{
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: burlywood;
+}
+.lan-container{
+    width: 100vw;
+    margin: auto;
+}
+.lan-header{
+    position: relative;
+    background-color: burlywood;
+    width: 100%;
+    height: 500px;
+}
+.lan-t-wrap, .lan-img-wrap{
+    position: absolute;
+}
+.lan-t-wrap{
+    font-size: 30px;
+    width: 350px;
+    height: 200px;
+    top: 50px;
+    left: 50px;
+}
+.lan-img-wrap{
+    width: 300px;
+    height: 400px;
+    bottom: 0;
+    right: 50px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.m-under-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+}
+.lan-section{
+    background-color: burlywood;
+}
+.sec-t{
+    text-align: center;
+}
+.s-nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.s-item{
+    padding: 15px;
+    text-align: center;
+}
+
+.lan-under-t{
+    text-align: center;
+    margin: 20px;
+}
+
+.f-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#f-eft-wrap{
+    position: relative;
+}
+.f-con div{
+    width: 300px;
+    height: 250px;
+}
+#f-ovray{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0px solid burlywood;
+    box-sizing: border-box;
+}
+#f-ovray:hover {
+    border: 20px solid burlywood;
+    transition: 1s;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    .lan-t-wrap{
+        text-align: center;
+        margin-bottom: 25px;
+        transition: 1s;
+    }
+    .lan-img-wrap{
+        width: 250px;
+        height: 100px;
+        transform: 1s;
+    }
+    .lan-img-wrap, .lan-t-wrap{
+        position: static;
+        transition: 1s;
+    }
+    .lan-header, .s-nav, .f-con{
+        font-size: 20px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+    } 
+    .m-under-text{
+        min-width: 370px;
+    }
+    .m-under-text > div{
+        font-size: 15px;
+    }
+    .f-con div{
+        width: 250px;
+        height: 200px;
+        transition: 1s;
+    }
+    #f-ovray:hover {
+        border: 10px solid burlywood;
+        transition: 1s;
+    }
+
+
+     
+}
+@media screen and (max-width: 1200px) {
+    .lan-t-wrap p, .m-under-text{
+        font-size: 20px;
+        transition: 1s;
+    }
+    .lan-img-wrap{
+        height: 340px;
+        transition: 1s;
+    }
+}
